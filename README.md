@@ -2,6 +2,10 @@
 
 A small research playground for dynamic ride-matching. Cars move on a grid; passengers request trips (origin→destination). Each **tick**, the agent assigns **idle cars** to **waiting passengers** using Q-values and **Hungarian** one-to-one matching.
 
+Description about the NYC OD data:
+
+To be added ...
+
 ---
 
 ## 🔍 Overview
