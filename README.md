@@ -6,6 +6,27 @@ Description about the NYC OD data:
 
 To be added ...
 
+## About this Repository
+
+The exercise notebook contained in this repository is designed for the course  **CIEQ6002 / CIEM6000 – Transportation Modeling and Analysis**  at **Delft University of Technology (TU Delft)**.  
+
+If you find this repository useful in your work, please cite it as follows:
+
+> **Reference**  
+> Cheng, J., Lu, Y., Azadeh, S. S. (2025). *RL Exercise – Ride-Hailing Assignment Notebook*.  
+> Delft University of Technology. GitHub repository: [https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment](https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment)
+
+**BibTeX:**
+```bibtex
+@misc{cheng2025_rl_ridehailing,
+  author       = {Cheng, Jingyi, Lu, Yahan, and Azadeh, Shadi Sharif},
+  title        = {RL Exercise – Ride-Hailing Assignment Notebook},
+  year         = {2025},
+  institution  = {Delft University of Technology},
+  howpublished = {\url{https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment}},
+  note         = {RL Exercise notebook for CIEQ6002/CIEM6000 Transportation Modeling and Analysis course}
+}
+````
 ---
 
 ## 🔍 Overview
@@ -73,31 +94,6 @@ We implement this as a **min-cost** problem with cost \(= Q_{\max}-Q\) and run *
 > If you need **lookahead** (value of freeing a car soon), switch to **TD(0) DQN** with a target net and bootstrap on `next_state`.
 
 ---
-
-## About this Repository
-
-This repository contains an exercise notebook designed for the course  
-**CIEQ6002 / CIEM6000 – Transportation Modeling and Analysis**  
-at **Delft University of Technology (TU Delft)**.  
-It demonstrates a simplified **ride-hailing assignment problem** using reinforcement learning for dispatching and matching decisions.
-
-If you find this repository useful in your work, please cite it as follows:
-
-> **Reference**  
-> Cheng, J., Lu, Y., Azadeh, S. S. (2025). *RL Exercise – Ride-Hailing Assignment Notebook*.  
-> Delft University of Technology. GitHub repository: [https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment](https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment)
-
-**BibTeX:**
-```bibtex
-@misc{cheng2025_rl_ridehailing,
-  author       = {Cheng, Jingyi, Lu, Yahan, and Azadeh, Shadi Sharif},
-  title        = {RL Exercise – Ride-Hailing Assignment Notebook},
-  year         = {2025},
-  institution  = {Delft University of Technology},
-  howpublished = {\url{https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment}},
-  note         = {RL Exercise notebook for CIEQ6002/CIEM6000 Transportation Modeling and Analysis course}
-}
-````
 ## Quick Start
 ```bash
 ### Setup (Python 3.9+)
