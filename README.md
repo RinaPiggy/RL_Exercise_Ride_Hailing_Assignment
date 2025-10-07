@@ -28,12 +28,11 @@ At any tick, we have:
 - A learned Q-value \(Q[p, c]\) estimating the value of assigning passenger \(p\) to car \(c\).
 
 We solve:
-\[
-\max_{X \in \{0,1\}^{|P_w|\times|C_i|}} \sum_{p,c} Q[p,c]\cdot X_{p,c}
+$$\max_{X \in \{0,1\}^{|P_w|\times|C_i|}} 
+\sum_{p,c} Q[p,c] \cdot X_{p,c}
 \quad\text{s.t.}\quad
-\sum_c X_{p,c}\le1,\;
-\sum_p X_{p,c}\le1.
-\]
+\sum_c X_{p,c} \le 1,\;
+\sum_p X_{p,c} \le 1.$$
 We implement this as a **min-cost** problem with cost \(= Q_{\max}-Q\) and run **Hungarian**. Unmatched passengers wait for later ticks when cars become idle (or new cars arrive, if enabled).
 
 ---
