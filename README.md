@@ -41,7 +41,6 @@ If you find this repository useful in your work, please cite it as follows:
 ---
 **Key design choices**
 - **Tick-based** env (`step_tick`) with **replanning every tick** using Hungarian on *waiting × idle*.
-- **Legacy** env (`step`) supports **re-queuing**, so multiple passengers can be served sequentially by the same car in one episode.
 - **OD-aware sampling**: optional real-world OD probabilities for passenger origin–destination sampling.
 
 ---
