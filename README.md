@@ -74,6 +74,30 @@ We implement this as a **min-cost** problem with cost \(= Q_{\max}-Q\) and run *
 
 ---
 
+## About this Repository
+
+This repository contains an exercise notebook designed for the course  
+**CIEQ6002 / CIEM6000 – Transportation Modeling and Analysis**  
+at **Delft University of Technology (TU Delft)**.  
+It demonstrates a simplified **ride-hailing assignment problem** using reinforcement learning for dispatching and matching decisions.
+
+If you find this repository useful in your work, please cite it as follows:
+
+> **Reference**  
+> Cheng, J., Lu, Y., Azadeh, S. S. (2025). *RL Exercise – Ride-Hailing Assignment Notebook*.  
+> Delft University of Technology. GitHub repository: [https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment](https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment)
+
+**BibTeX:**
+```bibtex
+@misc{cheng2025_rl_ridehailing,
+  author       = {Cheng, Jingyi, Lu, Yahan, and Azadeh, Shadi Sharif},
+  title        = {RL Exercise – Ride-Hailing Assignment Notebook},
+  year         = {2025},
+  institution  = {Delft University of Technology},
+  howpublished = {\url{https://github.com/RinaPiggy/RL_Exercise_Ride_Hailing_Assignment}},
+  note         = {RL Exercise notebook for CIEQ6002/CIEM6000 Transportation Modeling and Analysis course}
+}
+````
 ## Quick Start
 ```bash
 ### Setup (Python 3.9+)
@@ -124,3 +148,6 @@ gm = GridMap(seed=1, size=(rows, cols), num_cars=2, num_passengers=3,
 ├── tests/
 │ └── smoke_test.py # Small tests for tick + legacy + sentinels
 └── README.md # You are here
+---
+
+
