@@ -32,16 +32,14 @@ class ReplayMemory:
 
 
 class DQN(nn.Module):
-    # TODO implement q network
-    def __init__(self, inputs, outputs, hidden):
-        super(DQN, self).__init__()
-
+    """Small MLP; works well for masked bandit signal."""
+    def __init__(self, inputs: int, outputs: int, hidden: int = 128):
+        super().__init__()
         self.fc1 = nn.Linear(inputs, hidden)
-        self.fc2 = nn.Linear(hidden,outputs)
-        #self.bn2 = nn.BatchNorm1d(output)
+        self.fc2 = nn.Linear(hidden, hidden)
+        self.fc3 = nn.Linear(hidden, outputs)
 
     def forward(self, x):
-        # TODO implement train
-        x2 = F.relu(self.fc1(x))
-        out = self.fc2(x2)
-        return out
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        return self.fc3(x)
